@@ -14,7 +14,6 @@ const Header = () => {
               alt="avatar1"
               src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
             />
-            {/* <img className="rounded-circle  w-25" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="User Picture" /> */}
           </div>
         </div>
       </div>
