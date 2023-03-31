@@ -38,4 +38,9 @@
   }
 }
 
-
+@media screen and (max-width: 768px){
+  .blogs-actions{
+    display: flex;
+    flex-direction: column;
+  }
+}

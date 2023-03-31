@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="navbar mx-5 px-5">
+    <nav className="navbar mx-5 px-5 my-3">
       <div className="container-fluid mx-5 px-5">
         <h1>
             Knowledge-cafe

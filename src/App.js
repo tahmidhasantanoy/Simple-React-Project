@@ -11,18 +11,32 @@ function App() {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
+
+
+  let readingTime = 0;
+  const [count, setCount] = useState(0);
+  const markAsRead = (time) => {
+    readingTime = readingTime + time;
+    // console.log(count);
+    console.log(readingTime);
+    setCount(readingTime);
+    // <Actions readTime={count}></Actions>;
+  };
+  console.log(readingTime);
+  // function from another components 
+
   return (
     <div className="App mx-5">
       <Header></Header>
 
-      <div className="d-flex container-lg mx-5  px-5 py-5">
+      <div className="blogs-actions d-flex container-lg mx-5  px-5 py-5">
         <div>
           {blogs.map((blog) => (
-            <Blogs key={blog.id} info={blog}></Blogs>
+            <Blogs key={blog.id} info={blog} markAsRead={markAsRead}></Blogs>
           ))}
         </div>
-        <div>
-          <Actions></Actions>
+        <div className="container-fluid me-5 pe-5">
+          <Actions readTime={count}></Actions>
         </div>
       </div>
     </div>
