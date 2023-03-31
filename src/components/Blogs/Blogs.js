@@ -21,7 +21,7 @@ const Blogs = (props) => {
                     </div>
                 </div>
                 <div>
-                    <p>10 min read </p>
+                    <p className="text-nowrap">10 min read </p>
                 </div>
                 
             </div>
