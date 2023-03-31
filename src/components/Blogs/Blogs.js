@@ -26,10 +26,8 @@ const Blogs = (props) => {
                 
             </div>
             <h5 className="card-title w-100">{title}</h5>
-            {/* <p className="card-text w-75 text-wrap">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p> */}
+            <p>#beginners  <span style={{ marginLeft: '.5rem' }}></span>  #programming</p>
+            <a style={{color: '#6047EC'}} href="#"><h6>Mark as read</h6></a>
           </div>
         </div>
       </div>
