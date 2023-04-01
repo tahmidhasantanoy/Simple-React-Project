@@ -37,7 +37,9 @@ const Footer = () => {
               <h5 className="text-uppercase">What useEffect do?</h5>
 
               <p className="border p-3 mt-2">
-              First argument-callback function contains the side-effect logic. callback is executed right after the dependencies update.
+              First argument-callback function contains the side-effect logic. callback is executed right after the dependencies update. <br />
+              <strong><u>Work list</u></strong><br />
+              (1)validating input field, (2)live filtering, (3)update paragraph list on fetched API data update
               </p>
             </div>
 
