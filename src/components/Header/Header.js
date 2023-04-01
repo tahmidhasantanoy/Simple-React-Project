@@ -8,9 +8,9 @@ const Header = () => {
             Knowledge-cafe
         </h1>
         <div>
-          <div class="post__profile w-50">
+          <div className="post__profile w-50">
             <img
-              class="rounded-circle w-50"
+              className="rounded-circle w-50"
               alt="avatar1"
               src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
             />

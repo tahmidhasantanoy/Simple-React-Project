@@ -35,9 +35,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // };
 
 const Blogs = (props) => {
-  //   console.log(props);
   const markRead = props.markAsRead;
-  //   console.log(markRead);
   const bookedMark = props.bookMark
   const { id, img, picture, title, date, name, read_time } = props.info;
   return (

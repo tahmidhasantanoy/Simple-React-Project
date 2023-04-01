@@ -2,7 +2,6 @@ import React from "react";
 import "./Actions.css";
 
 const Actions = (props) => {
-  console.log(props);
   const bookArr  =  props.book
   const { readTime } = props;
 
@@ -24,7 +23,7 @@ const Actions = (props) => {
 
 
         <div
-          style={{ backgroundColor: "rgba(17, 17, 17, 0.05);" }}
+          style={{ backgroundColor: "rgba(17, 17, 17, 0.05)" }}
           className="me-5 pe-5 rounded-1 bg-dark-subtle text-center"
         >
 

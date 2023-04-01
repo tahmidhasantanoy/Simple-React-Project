@@ -18,7 +18,7 @@ function App() {
   }, []);
 
 
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("Already added!");
 
   //BookMarked section
   // const [booked,setBooked] = useState(0)
@@ -51,7 +51,6 @@ function App() {
     }
     arr = [...book,obj];
     setBooked(arr)
-    console.log(arr);
   };
 
   //Mark as read
@@ -69,7 +68,6 @@ function App() {
     // setCount(readingTimeArr);
   };
   // console.log(readingTime);
-  console.log(count);
 
   return (
     <div className="App mx-5">
