@@ -46,7 +46,7 @@ const Blogs = (props) => {
           />
           <div className=".card-body">
             <div className="d-flex align-items-center">
-              <div className="d-flex .space-evenly .w-25 py-3 align-items-center">
+              <div className="d-flex .space-evenly .w-25 .py-3 align-items-center">
                 <img className="w-25 p-3 rounded-circle" src={picture} alt="" />
                 <div className="">
                   <h6 className="">{name}</h6>

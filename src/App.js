@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Actions from "./components/Actions/Actions";
 import Blogs from "./components/Blogs/Blogs";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App mx-5">
       <Header></Header>
-
+      
       <div className="blogs-actions d-flex container-lg mx-5  px-5 py-5">
         <div>
           {blogs.map((blog) => (
@@ -39,6 +40,7 @@ function App() {
           <Actions readTime={count}></Actions>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
