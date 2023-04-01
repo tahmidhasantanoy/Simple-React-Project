@@ -2,25 +2,29 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 
-//BookMarked section
-const bookBookmark = (id) => {
-  //   console.log(typeof id);
-  let count = 0;
-  const arr = [1];
-  let bookMarkedArray = [...arr];
-  const storeID = bookMarkedArray.find((element) => element === id);
-  console.log(storeID); //Even though it's exist in array ,show undefined
 
-  if (storeID) {
-    console.log("alreay exist");
-  } else {
-    console.log("Not exist");
-    count++;
-    bookMarkedArray.push(id); //why replace by new one?
-  }
-  console.log(count);
-  console.log(bookMarkedArray);
-};
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+//BookMarked section
+// const bookmark = (id) => {
+//   //   console.log(typeof id);
+//   let count = 0;
+//   const arr = [];
+//   let bookMarkedArray = [...arr];
+//   const storeID = bookMarkedArray.find((element) => element === id);
+//   console.log(storeID); //Even though it's exist in array ,show undefined
+
+//   if (storeID) {
+//     console.log("alreay exist");
+//   } else {
+//     console.log("Not exist");
+//     count++;
+//     bookMarkedArray.push(id); //why replace by new one?
+//   }
+//   console.log(count);
+//   console.log(bookMarkedArray);
+// };
 
 //Mark As Read section
 // let readingTime = 0;
@@ -34,11 +38,12 @@ const Blogs = (props) => {
   //   console.log(props);
   const markRead = props.markAsRead;
   //   console.log(markRead);
+  const bookedMark = props.bookMark
   const { id, img, picture, title, date, name, read_time } = props.info;
   return (
     <div className="container-fluid mx-5 px-5 py-5">
       <div className="">
-        <div className="card w-75">
+        <div className="card custom-card w-75">
           <img
             className="card-img-top rounded rounded-3 w-100"
             src={img}
@@ -57,10 +62,11 @@ const Blogs = (props) => {
                 <p className="text-nowrap">
                   {read_time} min read{" "}
                   <button
-                    onClick={() => bookBookmark(id)}
+                    onClick={() => bookedMark(props.info,)}
                     className="border border-white bg-transparent"
                   >
                     <FontAwesomeIcon icon={faBookBookmark} />
+                    <ToastContainer></ToastContainer>
                   </button>
                 </p>
               </div>
